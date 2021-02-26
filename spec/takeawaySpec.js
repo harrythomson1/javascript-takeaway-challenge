@@ -29,7 +29,7 @@ describe('Takeaway', () => {
     takeaway.addItemToMenu('Burger', 3.00);
     takeaway.addItemToOrder('Burger');
     takeaway.addItemToOrder('Cheesey Chips');
-    expect(takeaway.readMenu()).toContain({item: 'Cheesey Chips', price: 2.50});
+    expect(takeaway.readOrder()).toContain({item: 'Cheesey Chips', price: 2.50});
     expect(takeaway.readOrder()).toContain({item: 'Burger', price: 3.00});
   })
 

@@ -13,11 +13,13 @@ class Takeaway {
   }
 
   readOrder() {
+    console.log(this.order)
     return this.order;
   }
 
   addItemToMenu(item, price) {
-    this.menu.push({item: item, price: price});
+    var int = parseFloat(price)
+    this.menu.push({item: item, price: int});
   }
 
   addItemToOrder(food) {

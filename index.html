@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Takeaway</title>
-    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <div>
@@ -10,22 +9,32 @@
     </div>
     <div>
       <h3>Menu</h3>
+      <p id="current-menu"></p>
     </div>
     <div>
       <h3>Current order</h3>
+      <p id="current-order"></p>
     </div>
     <div>
       <h3>Add menu item</h3>
       <form id="add-menu-item">
-        <input type="text">
+        <input id="new-menu-item" type="text">
+        <input id="new-menu-item-price" type="text">
         <input type="submit">
       </form>
     </div>
     <div>
       <h3>Select item</h3>
-      <form id="add-menu-item">
-        <input type="text">
+      <form id="select-menu-item">
+        <input id="current-order-item" type="text">
         <input type="submit">
+      </form>
+    </div>
+    <div>
+      <h3 id="price-heading"></h3>
+      <p id="price"></p>
+      <form id="price-submit">
+        <input type="submit" value="Calculate Price">
       </form>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
